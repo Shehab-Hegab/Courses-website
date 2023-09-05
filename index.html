@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Education</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Your additional custom CSS styles here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Additional styling for header */
+        header {
+            background-color: var(--violet);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Additional styling for navigation */
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 1rem;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .navbar ul li a.active,
+        .navbar ul li a:hover {
+            color: var(--pink);
+        }
+
+        .fa-bars,
+        .fa-times {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        /* Additional styling for home section */
+        .home {
+            background: linear-gradient(rgba(198, 59, 250, 0.8), rgba(198, 59, 250, 0.8)), url(../images/bg.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+            padding: 10rem 0;
+        }
+
+        .home h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .home p {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .home button {
+            font-size: 1.8rem;
+            padding: 1rem 2rem;
+            border: none;
+            background-color: var(--pink);
+            color: #fff;
+            border-radius: 5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .home button:hover {
+            background-color: var(--violet);
+        }
+
+        /* Additional styling for boxes */
+        .box-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1.5rem;
+            text-align: center;
+            border-radius: 1rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .box i {
+            font-size: 4rem;
+            color: var(--violet);
+            margin-bottom: 1rem;
+        }
+
+        .box h3 {
+            font-size: 2rem;
+            color: var(--pink);
+            margin-bottom: 1rem;
+        }
+
+        .box p {
+            font-size: 1.6rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-graduation-cap"></i></a>
+        <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#teacher"><i class="fas fa-chalkboard-teacher"></i> Teacher</a></li>
+                <li><a href="#course"><i class="fas fa-book"></i> Course</a></li>
+                <li><a href="#review"><i class="fas fa-star"></i> Review</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Home section -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Learn Online from Home</h1>
+            <p>Learn how to create professional websites with expert teachers available 24/7 to assist you in your projects.</p>
+            <a href="#"><button>Discover More</button></a>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation"></i>
+                <a href="#" class="logo"><i class="fas fa-graduation-cap"></i></a>
+
+                <h3>Trending Course</h3>
+                <p>Learn ipsum dolor sit amet consectetur adipiscing elit. libero, sit</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-fire"></i>
+                <h3>Free Trial</h3>
+                <p>Learn ipsum dolor sit amet consectetur adipiscing elit. libero, sit</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-award"></i>
+                <h3>Certifications</h3>
+                <p>Learn ipsum dolor sit amet consectetur adipiscing elit. libero, sit</p>
+                
+            </div>
+        </div>
+
+
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-heading">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Who We Are</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <h3>Our Mission</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <h3>Why Choose Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="Online-Learning-Resources.jpg" alt="About Us Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Home section ends -->
+    <!-- Header end -->
+    <section id="teacher" class="teacher">
+        <h1 class="handing">your teacher</h1>
+        <h3 class="title">meet professional trainers</h3>
+        <div class="card-container">
+            <div class="card">
+                <img src="OIP (1).jpg" alt="Teacher 1" class="teacher-image">
+                <h3>someone's name</h3>
+                <p>i love teaching</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-whattsap"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="OIP.jpg" alt="Teacher 2" class="teacher-image">
+                <h3>someone's name</h3>
+                <p>i love teaching</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-whattsap"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="R.jpg" alt="Teacher 3" class="teacher-image">
+                <h3>someone's name</h3>
+                <p>i love teaching</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-whattsap"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="OIP (2).jpg" alt="Teacher 4" class="teacher-image">
+                <h3>someone's name</h3>
+                <p>i love teaching</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-whattsap"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* Your existing CSS styles */
+    
+        /* Additional styling for teacher images */
+        .teacher-image {
+            width: 200px; /* Adjust the desired width */
+            height: 200px; /* Adjust the desired height */
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+            border-radius: 20%; /* To make the image circular */
+        }
+    </style>
+
+</section>
+    
+<!-- courses section starts -->
+
+<section id="course" class="course">
+    <h1 class="heading">Our Courses</h1>
+    <h3 class="title">Upgrade Your Skills with Newest Courses</h3>
+    
+    <div class="box-container">
+        <div class="box">
+            <div class="logo">
+                <img src="html.jpg" alt="HTML5 Logo">
+            </div>
+            <h3>HTML5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vivamus, ex.</p>
+        </div>
+
+        <div class="box">
+            <div class="logo">
+                <img src="css.jpg" alt="CSS3 Logo">
+            </div>
+            <h3>CSS3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vivamus, ex.</p>
+        </div>
+
+        <div class="box">
+            <div class="logo">
+                <img src="js.jpg" alt="JavaScript Logo">
+            </div>
+            <h3>JavaScript</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vivamus, ex.</p>
+        </div>
+
+        <div class="box">
+            <div class="logo">
+                <img src="web.jpg" alt="Web Development Logo">
+            </div>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vivamus, ex.</p>
+        </div>
+
+        <div class="box">
+            <div class="logo">
+                <img src="gr.jpg" alt="Graphic Design Logo">
+            </div>
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vivamus, ex.</p>
+        </div>
+    </div>
+</section>
+
+<section id="course" class="course">
+    <h1 class="heading">Our Courses</h1>
+    <h3 class="title">Upgrade your skills with the latest courses</h3>
+    
+    <div class="box-container">
+        <div class="box">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quibusdam.</p>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quibusdam.</p>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quibusdam.</p>
+        </div>
+    </div>
+</section>
+ 
+    <!-- Your other sections here -->
+
+    <!-- reivew section starts -->
+
+
+    <section id="review" class="review">
+        <h1 class="heading">Students Review</h1>
+        <h3 class="title">What Our Students Say About Us</h3>
+    
+        <div class="box-container">
+            <div class="box" data-rating="4.5">
+                <img src="OIP (2).jpg" alt="">
+                <h3>Teacher A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+    
+            <div class="box" data-rating="3">
+                <img src="R.jpg" alt="">
+                <h3>Teacher B</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+    
+            <div class="box" data-rating="4">
+                <img src="OIP.jpg" alt="">
+                <h3>Teacher C</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+    
+            <div class="box" data-rating="3.5">
+                <img src="OIP (1).jpg" alt="">
+                <h3>Teacher D</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- reivew section ends -->
+
+    <!-- content section starts -->
+
+<section class="contact" id="contact">
+    <h1 class="heading">contact us</h1>
+    <h3 class="title">we love conversations, let's talk.</h3>
+
+    <div class="row">
+        <div class="image">
+            <img src="sss.jpg" alt="">
+        </div>
+
+        <div class="form-container">
+            <form action="">
+                <input type="text" placeholder="full name">
+                <input type="email" placeholder="enter your email">
+                <input type="number" placeholder="phone">
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" value="message">
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- content section ends -->
+
+
+
+    
+<section class="footer">
+
+    <div class="icons">
+        <a href="#"  class="fab fa-facebook-f"></a>
+        <a href="#"  class="fab fa-twitter"></a>
+        <a href="#"  class="fab fa-instagram"></a>
+        <a href="#"  class="fab fa-github"></a>
+        <a href="#"  class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="credit">created by <span>Shehab-Hegab</span></div>
+
+    
+</section>
+    
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Your additional JavaScript code here
+    </script>
+</body>
+</html>
